@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Diagrama de Pareto | Ingeniería de Métodos</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pareto.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            INGENIERÍA DE MÉTODOS
+        </a>
+
+        <nav class="nav-menu">
+
+            <a href="exploratorias.html">
+                Herramientas exploratorias
+            </a>
+
+            <a href="registro-analisis.html">
+                Registro y análisis
+            </a>
+
+            <a href="operador-maquina.html">
+                Operador - máquina
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main class="pareto-page">
+
+        <section class="pareto-header">
+
+            <a href="exploratorias.html" class="breadcrumb">
+                ← Herramientas exploratorias
+            </a>
+
+            <p class="section-label">
+                HERRAMIENTAS EXPLORATORIAS
+            </p>
+
+            <h1>Diagrama de Pareto</h1>
+
+            <p>
+                Enlista las causas o tipos de defecto con su
+                frecuencia. Se ordenan de mayor a menor y se calcula
+                el porcentaje acumulado para identificar el 20% de
+                causas que explican el 80% del problema.
+            </p>
+
+        </section>
+
+
+        <section class="pareto-card">
+
+            <div class="tabla-wrapper">
+
+                <table id="tabla-pareto">
+
+                    <thead>
+                        <tr>
+                            <th class="col-desc">Causa / defecto</th>
+                            <th class="col-num">Frecuencia</th>
+                            <th class="col-acciones">Acciones</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tabla-pareto-body">
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <div class="acciones-tabla">
+
+                <button id="agregar-causa" class="btn-secundario">
+                    + Agregar causa
+                </button>
+
+                <label class="umbral-campo">
+                    Umbral (regla 80/20)
+                    <input type="number" id="umbral" value="80" min="1" max="100" step="1">
+                    %
+                </label>
+
+            </div>
+
+        </section>
+
+
+        <section class="pareto-card">
+
+            <h2>Diagrama</h2>
+
+            <div class="grafico-wrapper">
+
+                <svg id="grafico-pareto" viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg">
+                </svg>
+
+            </div>
+
+            <p class="pareto-conclusion" id="pareto-conclusion"></p>
+
+        </section>
+
+    </main>
+
+
+    <script src="pareto.js"></script>
+
+</body>
+
+</html>

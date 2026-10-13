@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registro y análisis | Ingeniería de Métodos</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="registro-analisis.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            INGENIERÍA DE MÉTODOS
+        </a>
+
+        <nav class="nav-menu">
+
+            <a href="exploratorias.html">
+                Herramientas exploratorias
+            </a>
+
+            <a href="registro-analisis.html">
+                Registro y análisis
+            </a>
+
+            <a href="operador-maquina.html">
+                Operador - máquina
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main class="ra-page">
+
+        <section class="ra-header">
+
+            <p class="section-label">
+                REGISTRO Y ANÁLISIS
+            </p>
+
+            <h1>Estudio de tiempos</h1>
+
+            <p>
+                Captura las lecturas de cada elemento, califica el
+                desempeño del operario y define los suplementos
+                aplicables para obtener el tiempo estándar de la
+                operación.
+            </p>
+
+        </section>
+
+
+        <!-- Lista de elementos -->
+
+        <section id="elementos-container" class="elementos-container">
+
+            <!-- Las tarjetas de elemento se insertan aquí por JS -->
+
+        </section>
+
+
+        <div class="acciones-globales">
+
+            <button id="agregar-elemento" class="btn-secundario">
+                + Agregar elemento
+            </button>
+
+            <button id="calcular" class="btn-primario">
+                Calcular tiempo estándar
+            </button>
+
+        </div>
+
+
+        <!-- Resultados -->
+
+        <section id="resultados" class="resultados hidden">
+
+            <h2>Resultados</h2>
+
+            <div class="tabla-wrapper">
+
+                <table id="tabla-resultados">
+
+                    <thead>
+                        <tr>
+                            <th>Elemento</th>
+                            <th>Lecturas</th>
+                            <th>TO promedio</th>
+                            <th>Desv. est.</th>
+                            <th>Factor C</th>
+                            <th>Tiempo normal</th>
+                            <th>Suplementos</th>
+                            <th>Tiempo estándar</th>
+                            <th>N recomendado</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tabla-resultados-body">
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <div class="total-general">
+
+                <span>Tiempo estándar total de la operación</span>
+
+                <strong id="total-valor">—</strong>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="registro-analisis.js"></script>
+
+</body>
+
+</html>
