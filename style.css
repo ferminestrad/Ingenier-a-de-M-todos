@@ -161,37 +161,6 @@ body {
     transform: translateY(-2px);
 }
 
-
-/* ==================================================
-   INTRODUCCIÓN
-   ================================================== */
-
-.intro {
-    padding: 100px 20px;
-
-    background-color: #f5f5f5;
-}
-
-.intro-content {
-    max-width: 800px;
-    margin: auto;
-}
-
-.intro h2 {
-    margin-bottom: 20px;
-
-    font-size: 38px;
-    line-height: 1.1;
-}
-
-.intro p {
-    max-width: 700px;
-
-    font-size: 17px;
-    color: #555555;
-}
-
-
 /* ==================================================
    FOOTER
    ================================================== */
